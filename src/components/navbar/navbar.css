@@ -1,0 +1,131 @@
+.lpg__navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    height: 60px;
+    margin: 0 4rem;
+}
+
+.lpg__navbar-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.lpg__navbar-links p,
+.lpg__navbar-menu_container_links p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: var(--color-links);
+    margin-right: 1rem;
+}
+
+.lpg__navbar-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.lpg__navbar-logo h1 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+
+    color: var(--color-logo);
+    cursor: pointer;
+
+}
+
+.lpg__navbar-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lpg__navbar-btn button,
+.lpg__navbar-menu_container-links-btn button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    background: #111B47;
+    border-radius: 2px;
+    /* padding: 0.15rem 3rem; */
+
+    width: 160px;
+    height: 26px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lpg__navbar-menu {
+    display: none;
+    position: relative;
+
+    margin-left: 1rem;
+}
+
+.lpg__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.lpg__navbar-menu_container-links-btn {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 750px){
+    .lpg__navbar-links {
+        display: none;
+    }
+
+    .lpg__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .lpg__navbar {
+        margin: 0 2rem;
+    }
+    
+    .lpg__navbar-links {
+        display: none;
+    }
+
+    .lpg__navbar-btn {
+        display: none;
+    }
+
+    .lpg__navbar-menu_container-links-btn {
+        display: block;
+    }
+
+    .lpg__navbar-menu_container-links-btn button {
+        width: 120px;
+    }
+    
+}
