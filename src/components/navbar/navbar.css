@@ -5,7 +5,7 @@
     align-items: center;
 
     height: 60px;
-    margin: 0 4rem;
+    padding: 0 10rem;
 }
 
 .lpg__navbar-links {
@@ -97,7 +97,11 @@
 
 
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 780px){
+    .lpg__navbar {
+        padding: 0 5rem;
+    }
+
     .lpg__navbar-links {
         display: none;
     }
@@ -107,9 +111,9 @@
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .lpg__navbar {
-        margin: 0 2rem;
+        padding: 0 2rem;
     }
     
     .lpg__navbar-links {
