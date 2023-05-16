@@ -1,0 +1,135 @@
+.lpg__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1025px;
+}
+
+.lpg__header-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 539.37px;
+}
+
+.lpg__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    /* or 132% */
+
+    letter-spacing: 1px;
+
+    /* Colour/Main/Blue/900 */
+
+    color: var(--color-title);
+}
+
+.lpg__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: var(--color-text);
+}
+
+.lpg__header-content_btn {
+    display: flex;
+    flex-direction: row;
+
+}
+.lpg__header-content_btn button {
+    
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
+    text-align: center;
+    padding: 0.2rem 2rem;
+    margin-top: 6rem;
+    cursor: pointer;
+    
+}
+
+.lpg__header-content_btn :first-child {
+    color: #FFFFFF;
+    background: #111B47;;
+    margin-right: 1rem;
+}
+
+.lpg__header-content_btn :last-child {
+    color: #091133;
+
+    border: 2px solid #091133;
+    border-radius: 2px;
+}
+
+.lpg__header-image  {
+    display: flex;
+
+}
+
+.lpg__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .lpg__header {
+        flex-direction: column;
+    }
+    
+    .lpg__header-content {
+        margin-bottom: 4rem;
+    }
+
+    .lpg__header-content_btn button {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .lpg__header-content h1 {
+        font-size: 40px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .lpg__header-content h1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .lpg__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) { 
+    .lpg__header-content h1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .lpg__header-content p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .lpg__header-content_btn {
+        flex-direction: column;
+    }
+    
+    .lpg__header-content_btn button:first-child {
+        margin-right: 0;
+    }
+    
+}
+    
