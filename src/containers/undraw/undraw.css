@@ -59,6 +59,11 @@
         line-height: 40px;
     }
 
+    .lpg__undraw-content-head p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
     .lpg__undraw-content-icons {
         flex-direction: column;
     }
